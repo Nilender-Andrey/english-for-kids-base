@@ -1,0 +1,153 @@
+.statistic {
+  width: 100%;
+}
+.header-statistic {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  .btn-wrap {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    height: 38px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+  }
+  .btn:hover {
+    box-shadow: 0px 16px 40px rgba(40, 136, 215, 0.35);
+  }
+  .btn:active {
+    background-color: #11a9ff
+  }
+  .repeat-words {
+    background-color: #6de60e;
+    width: 200px;
+  }
+  .reset {
+    width: 75px;
+    background-color: #ff5a26;
+  }
+}
+
+.statistic-title {
+  color: black;
+  font-size: 4rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+
+  .increase::after {
+    content: "▲";
+    font-size: 10px;
+    margin-left: 2px;
+    padding-left: 0px;
+  }
+  .waning::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  thead {
+    background-color: #e6f6ff;
+
+    color: white;
+
+    cursor: pointer;
+
+    & th:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+
+    & th:first-child {
+      border-radius: 12px 0 0 12px;
+    }
+
+    th {
+      font-weight: 600;
+      font-size: 20px;
+      color: #2d3743;
+      padding: 20px 0 20px 10px;
+    }
+  }
+
+  tbody {
+    color: black;
+    & tr {
+      width: 98%;
+      border-bottom: 1px solid #e1e6ed;
+      font-size: 18px;
+    }
+
+    & th {
+      padding: 20px 0 20px 10px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .statistic-title {
+    font-size: 3.5rem;
+  }
+  .table {
+    thead th {
+      font-size: 18px;
+    }
+    tbody th {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .statistic-title {
+    font-size: 3rem;
+  }
+  .table {
+    thead th {
+      padding: 10px 0 10px 5px;
+      font-size: 14px;
+    }
+    tbody th {
+      padding: 10px 0 10px 5px;
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .statistic-title {
+    font-size: 2.5rem;
+  }
+
+  .table {
+    thead th {
+      padding: 5px 0 5px 3px;
+      font-size: 9px;
+    }
+    tbody th {
+      padding: 5px 0 5px 3px;
+      font-size: 8px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .statistic-title {
+    font-size: 2rem;
+  }
+}

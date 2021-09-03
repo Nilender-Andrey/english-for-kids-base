@@ -1,0 +1,40 @@
+.header-admin__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1300px;
+  height: 15vh;
+
+  padding: 0 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+
+  .btn-admin {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 22px;
+    color: black;
+
+    &.active,
+    &:hover {
+      color: #0592e1;
+      border-bottom: 1px solid #0592e1;
+    }
+  }
+  .words-btn {
+    margin-left: 40px;
+  }
+}
+
+.main-admin__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1300px;
+  height: 85vh;
+  margin: 0 auto;
+  padding: 0 10px;
+}

@@ -1,0 +1,68 @@
+.category-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+
+  border: 2px solid #0592e1;
+  border-radius: 5px;
+
+  .category__close-btn {
+    position: absolute;
+    top: 0px;
+    left: 193px;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    width: 43px;
+    height: 43px;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    &:hover {
+      color: #0592e1;
+    }
+  }
+  .word-count {
+    font-size: 22px;
+    padding-left: 10px;
+
+    .word-count__number {
+      font-weight: 900;
+    }
+  }
+
+  .category-name {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .category-card__btns {
+    text-align: center;
+  }
+
+  .category__update-btn,
+  .category__addWord-btn {
+    margin: 0 15px;
+    padding: 6px 10px;
+    border: 1px solid #0592e1;
+    border-radius: 5px;
+
+    background-color: transparent;
+    outline: none;
+
+    font-size: 16px;
+    color: #0592e1;
+
+    cursor: pointer;
+  }
+}

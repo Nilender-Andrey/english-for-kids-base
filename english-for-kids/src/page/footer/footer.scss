@@ -1,0 +1,71 @@
+.footer {
+  position: relative;
+    
+  height: 150px;
+  width: 100%;
+  
+  transition: all 0.3s linear;
+
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .rs-school {
+    width: 82px;
+    height: 30px;
+  }
+
+  .year {
+    font-size: 28px;
+    font-weight: 900;
+    color: #11a9ff;
+    margin: 0 4vw;
+  }
+
+  .github-wrap {
+    display: flex;
+
+    width: 156px;
+    height: 40px;
+
+    .github-link {
+      font-size: 14px;
+      font-weight: 400;
+      color: black;
+    }
+
+    .github {
+      display: block;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .year {
+      font-size: 24px;
+    }
+    .github-wrap {
+      width: 120px;
+      height: 40px;
+      .github-link {
+        font-size: 12px;
+      }
+    }
+    .rs-school {
+      width: 82px;
+      height: 30px;
+    }
+  }
+
+  &.none {
+    height: 0;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}

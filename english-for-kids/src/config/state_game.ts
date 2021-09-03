@@ -1,0 +1,26 @@
+import Cards from './state_cards';
+
+export const state = {
+  statisticsPage: 'Statistic',
+  menuPage: 'Main Page',
+  gamePage: 'game_page',
+  repeatPage: 'repeat_page',
+  statisticPage: 'statistic_page',
+  activeCategory: 'Main Page',
+  adminPage: 'Login',
+  gameControl: false,
+  statePlay: false,
+  stateTrain: true,
+  menuGameControlState: false,
+  categoryNumber: 0,
+  mixedSounds: [''],
+  step: 0,
+  startGame: false,
+  mistakes: 0,
+  endGame: false,
+  sortAscending: true,
+  lowerLimitForRepetition: 0,
+  upperRepetitionLimit: 50,
+  numberOfCategories: Cards.length,
+  playing: true,
+};
